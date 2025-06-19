@@ -9,3 +9,43 @@
         text-decoration: none;
     }
 }
+:root {
+    --pink-light: #C59DD2;
+    --pink-base: #9547A5;
+    --pink-dark: #7D298A;
+    --pink-low: #3F0F41;
+    --blue-light: #73B6D2;
+    --blue-base: #358BB9;
+    --blue-mid: #2374A4;
+    --blue-dark: #144A72;
+    --blue-low: #08233C;
+    --shape-stroke: #002347;
+    --shape-hover: #001933;
+    --shape-base: #000F1F;
+    --shape-background: #00050a;
+    --text-title: #F8FBFB;
+    --text-body: #E2E7E9;
+    --text-label: #BAC6C9;
+
+    --f-family: 'Raleway', sans-serif;
+    --title-sm: 800 24px var(--f-family);
+    --title-md: 800 24px var(--f-family);
+    --title-lg: 800 28px var(--f-family);
+    --title-xs: 800 16px var(--f-family);
+    --subtitle: 400 16px/140% var(--f-family);
+    --body-sm: 400 14px var(--f-family);
+    --body-md: 400 14px/140% var(--f-family);
+    --body-lg: 100 14px/140% var(--f-family);
+    --body-xs: 400 12px/140% var(--f-family);
+    --link: 500 14px var(--f-family);
+    --button: 800 14px var(--f-family);
+    --tag: 800 10px var(--f-family);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--shape-background);
+    font-family: var(--f-family);
+    color: var(--text-body);
+}
