@@ -48,4 +48,5 @@ body {
     background: var(--shape-background);
     font-family: var(--f-family);
     color: var(--text-body);
+    overflow-x: hidden;
 }
