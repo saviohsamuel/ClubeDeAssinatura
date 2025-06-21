@@ -1,0 +1,35 @@
+header {
+    background: url('/assets/imgs/hero-bg.png') no-repeat center/cover;                            
+    height: 75vh;     
+    position: relative;    
+    & nav {                  
+        padding: 20px;                            
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {                      
+            padding: 12px 20px;  
+            font-weight: 800;                         
+            font: var(--button);
+        }
+    }
+}
+.logo {
+    display: none;
+}
+.logo__symbol {
+    width: 64.55px;
+    height: 48px;
+}
+.apresentation { 
+    margin: 48px auto 193px;       
+    width: 335px;  
+    text-align: center;           
+    & h1 {                       
+        font: var(--title-lg);            
+    }
+    & p {            
+        font: var(--body-lg);
+        margin-top: 16px;            
+    }
+}
