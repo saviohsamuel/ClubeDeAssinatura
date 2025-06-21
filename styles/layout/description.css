@@ -1,0 +1,42 @@
+#description {
+    margin-block: 81px;
+}
+.descrition__container {                    
+    text-align: center;        
+    position: relative;
+    width: 335px;    
+    margin-inline: auto;
+    & p {
+        font: var(--subtitle);
+    }
+    & img {
+        width: 40px;
+        height: 40px;                
+        position: absolute;        
+    }
+    & img:nth-child(1) {
+        right: 60px;
+        top: -47px;
+        rotate: 15deg;
+    }
+    & img:nth-child(3) {
+        width: 32px;
+        height: 32px;        
+        rotate: 99.47deg;          
+        left: 10px;
+        bottom: -25px;
+        rotate: -45deg;                
+    }
+    & img:nth-child(4) {
+        width: 40px;
+        height: 40px;        
+        rotate: -15deg;                
+        right: 10px; 
+        bottom: -40px;
+        rotate: 15deg;           
+    }
+    & h2 {        
+        font: var(--body-md);
+        padding: 25px;                
+    }
+}
