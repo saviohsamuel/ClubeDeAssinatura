@@ -2,20 +2,15 @@ header {
     background: url('/assets/imgs/hero-bg.png') no-repeat center/cover;                            
     height: 75vh;     
     position: relative;    
-    & nav {                  
-        padding: 20px;                            
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        a {                      
-            padding: 12px 20px;  
-            font-weight: 800;                         
-            font: var(--button);
-        }
-    }
 }
-.logo {
-    display: none;
+.nav {                  
+    padding: 20px;                                    
+    justify-content: space-between;
+    & .btn {                      
+        padding: 12px 20px;  
+        font-weight: 800;                         
+        font: var(--button);
+    }
 }
 .logo__symbol {
     width: 64.55px;
