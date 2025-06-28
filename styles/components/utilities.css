@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+.flex {
+    display: flex;    
+}
+.f-a-center {
+    align-items: center;
+}
+.f-j-center {
+    justify-content: center;
+}
+.f-d-column {
+    flex-direction: column;
+}

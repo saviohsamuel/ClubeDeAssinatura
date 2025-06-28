@@ -1,5 +1,7 @@
 @import url('styles/default.css');
+@import url('styles/components/utilities.css');
 @import url('styles/components/buttons.css');
 @import url('styles/layout/header.css');
 @import url('styles/layout/description.css');
 @import url('styles/layout/book.css');
+@import url('styles/layout/price.css');
