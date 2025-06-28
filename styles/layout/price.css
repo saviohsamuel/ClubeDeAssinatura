@@ -1,0 +1,115 @@
+#price {
+    & h2 {
+        text-align: center;
+        margin-block: 350px 150px;
+    }
+}           
+.blur {
+    display: inline-block;
+    height: 944px;
+    width: 944px;
+    opacity: 0.5;
+    background: var(--shape-base);
+    filter: blur(284px);
+    position: absolute;
+    z-index: -1;
+    border-radius: 944px;
+}
+.wrapper__card {   
+    margin-block: 200px 500px;                                      
+    &:hover> :not(:hover) {
+        background: var(--shape-base);
+        border: 3px solid var(--shape-hover);                                            
+    }            
+}
+.card { 
+    background: var(--shape-base);       
+    border-radius: 24px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 32px 32px 28px 32px;                                  
+    transition: all .2s ease-in-out;            
+    border: 3px solid var(--shape-hover);            
+    scale: .98;                    
+    justify-content: space-between;    
+    flex-shrink: 0;            
+    & img[src*="bunny"] {
+        display: none;
+    }                                                                         
+    & ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;  
+        & li {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;                    
+            & svg {
+                height: 14px;
+                width: 24px;
+                path {
+                    fill: var(--pink-base);
+                }
+            }
+        } 
+        &.list {
+            li {
+                svg {
+                    path {
+                        fill: var(--blue-base);
+                    }
+                }
+            }
+        }             
+    } 
+    &:hover {
+        background: var(--shape-hover);                
+        box-shadow: 0px 0px 66px 0px rgba(53, 139, 185, 0.10);                                                                        
+    }                        
+    &.card-2 {  
+        background: var(--shape-hover);
+        box-shadow: 0px 0px 66px 0px rgba(53, 139, 185, 0.10);
+        z-index: 1;
+    }
+} 
+.stars { 
+    display: none;                                                          
+}
+.btn {
+    text-align: center;
+    box-sizing: border-box;                
+    padding: 12px 52.5px;                                
+    width: 100%;                
+    font-size: 14px;
+}
+.cards__price {    
+    row-gap: 24px;
+    align-self: flex-start;
+}
+.price__option {    
+    justify-content: space-between;    
+    font: var(--title-xs);
+    & .semestral {
+        color: var(--pink-light);
+    }
+    & .tag {        
+        text-transform: uppercase;
+        font: var(--tag);
+        background: var(--shape-stroke);
+        padding: 9px 20px;
+        border-radius: 50px;            
+    }        
+    .plan {
+        color: var(--blue-light);
+    }
+}
+.price__value {    
+    & p:nth-child(1) {
+        font: var(--title-md);
+    }
+    & p:nth-child(2) {
+        font: var(--body-sm); 
+        color: var(--text-label);       
+    }
+}
