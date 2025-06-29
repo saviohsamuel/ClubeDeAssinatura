@@ -13,3 +13,10 @@
 .f-d-column {
     flex-direction: column;
 }
+.blur {
+    display: inline-block;    
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
