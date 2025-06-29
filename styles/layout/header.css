@@ -1,19 +1,17 @@
 header {
     background: url('/assets/imgs/hero-bg.png') no-repeat center/cover;                            
-    height: 75vh;     
-    position: relative;    
+    height: 75vh;         
 }
 .nav {                  
     padding: 20px;                                    
     justify-content: space-between;
-    & .btn {                      
-        padding: 12px 20px;  
-        font-weight: 800;                         
-        font: var(--button);
-    }
+}
+.btn__nav {                      
+    padding: 12px 20px;                              
+    font: var(--button);
 }
 .logo__symbol {
-    width: 64.55px;
+    width: 65px;
     height: 48px;
 }
 .apresentation { 
