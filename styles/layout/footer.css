@@ -1,0 +1,72 @@
+footer {    
+    background: url('/assets/imgs/background-footer.png') no-repeat;  
+    background-size: 100% 100%;       
+    padding-block: 98px 38px; 
+}
+.container__icons {        
+    margin-inline: 32px;
+    row-gap: 12px;
+    & span {
+        width: 100%;
+        height: 3px;
+        background: var(--shape-stroke);
+    }
+}
+.nav__icons {                            
+    justify-content: space-between;
+    width: 100%;
+}
+.icons {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: relative;  
+    padding: .3rem;              
+    & svg path {
+        fill: var(--blue-base);        
+    }   
+    &:hover {
+        z-index: 2;
+        svg path {
+            fill: white;
+            transition: .2s ease-in-out;                
+        }
+    }
+    &::after {
+        content: "";
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        padding: inherit;
+        background: var(--shape-stroke);                  
+        position: absolute;                             
+        top: 0;
+        left: 0;
+        z-index: -1;
+        scale: 0;
+    }
+    &:hover::after {
+        transition: all .3s ease-in-out;
+        scale: 1;
+        opacity: 1;        
+    }
+}
+.about {   
+    justify-content: space-around;        
+    font: var(--link);
+    margin:40px 32px 38px 32px;
+    .nav__descri {
+        font: var(--title-xs);
+        color: var(--text-body);
+    }
+    li {
+        margin-top: .9rem;
+        & a {                                
+            color: var(--blue-light);
+            &:hover {
+                color: var(--text-body);
+                transition: .4s ease-in-out;
+            }
+        }
+    }
+}
