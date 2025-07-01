@@ -26,26 +26,31 @@
         color: var(--text-body);
     }
 }  
-.container__pin {    
-    transform: translate(10px, 60px);
-    .pin__arrow {             
-        & > img {                                
-            width: 35.29px;
-            height: 42.75px;                    
-            transform: translate(-15px, 20px);
-        }
-        figcaption {                    
-            transform: translate(-25px, 10px);                        
-        }
-    }                    
-    .pin {
-        width: 74.89px;                 
-        height: 85.4px;        
-        rotate: -9deg;                                        
+.pin__arrow { 
+    rotate: 10deg;        
+    animation: appearArrowPin 1.5s ease-in-out both;
+    animation-timeline: view();
+    animation-range: 180px 350px;                    
+    & > img {                                
+        width: 35.29px;
+        height: 42.75px;                    
+        transform: translate(-15px, 20px);
     }
+    figcaption {                    
+        transform: translate(-25px, 10px);                        
+    }
+}                    
+.pin {
+    width: 74.89px;                 
+    height: 85.4px;        
+    animation: appearPin 1.5s 1.5s ease-in-out both;
+    animation-timeline: view();
+    animation-range: 100px 200px;
 }
 .arrow__book {
-    transform: translate(-62px, -110px);    
+    animation: appearArrowBook 1.5s ease-in-out both;
+    animation-timeline: view();
+    animation-range: 100px 200px;
     & > img {
         width: 58.74px;
         height: 10.1px;    
@@ -56,23 +61,29 @@
 }
 .container__bookmarks {
     position: relative;                        
-    top: -90px;
-    left: 28px;            
+    top: -65px;
+    left: -25px;           
     .bookmark {
         width: 58.4px;   
         height: 180.92px;
         position: absolute;                
     }
     .bookmark__y {
-        rotate: 10deg;
+        animation: appearBookMarkY 1.5s ease-in-out both;
+        animation-timeline: view();
+        animation-range: 150px 300px;
     } 
     .bookmark__p {                
-        top: 30px;
-        left: 35px;
-        rotate: 18deg;
+        top: 10px;         
+        left: 15px;         
+        animation: appearBookMarkP 1.5s ease-in-out both;
+        animation-timeline: view();
+        animation-range: 170px 315px;
     }
     .arrow__bookmark {
-        transform: translate(25px, 198px);
+        animation: appearArroBookMark 1.5s ease-in-out both; 
+        animation-timeline: view();
+        animation-range: 230px 315px;        
         & > img {
             width: 48.96px;
             height: 50.99px;
@@ -87,4 +98,86 @@
     height: 207.68px;    
     position: absolute;
     z-index: 1;
+}
+@keyframes appearPin {
+    0% {
+        transform: translate(100px, 42px);             
+        scale: .5;
+    }    
+    50% {
+        transform: translate(5px, 55px);
+        scale: 1.1;
+    }
+    100% {
+        transform: translate(10px, 55px);
+        scale: 1;
+    }
+}
+@keyframes appearArrowPin {
+    0% {
+        transform: translate(120px, 50px);                        
+    }   
+    50% {        
+        transform: translate(3px, 55px);
+        scale: 1.1;
+    }
+    100% {
+        transform: translate(1px, 50px);
+        rotate: -6deg;
+        scale: 1;
+    }
+}
+@keyframes appearArrowBook {
+    0% {
+        transform: translate(30px, -78px);
+    }
+    50% {
+        transform: translate(-65px, -113px);
+        scale: 1.1;
+    }
+    100% {
+        transform: translate(-62px, -110px);
+        scale: 1;
+    }
+}
+@keyframes appearBookMarkY {
+    0% {
+        transform: translate(-10px, 5px);                   
+    }    
+    50% {
+        transform: translate(54px, -38px);
+        scale: 1.1;
+    }
+    100% {
+        transform: translate(48px, -38px);
+        scale: 1;
+        rotate: 9deg;
+    }
+}
+@keyframes appearBookMarkP {
+    0% {
+        transform: translate(0);        
+    }
+    50% {
+        rotate: 15deg;
+        scale: 1.1;
+    }
+    100% {        
+        transform: translate(65px, -33px);
+        rotate: 18deg;
+        scale: 1;
+    }
+}
+@keyframes appearArroBookMark {
+    0% {
+        transform: translate(0px, 110px);
+    }
+    50% {
+        transform: translate(83px, 168px);
+        scale: 1.1;
+    }
+    100% {
+        transform: translate(80px, 165px);
+        scale: 1;
+    }
 }
